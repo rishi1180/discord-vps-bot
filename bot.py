@@ -48,16 +48,16 @@ load_dotenv()
 # Bot configuration
 TOKEN = os.getenv('DISCORD_TOKEN')
 HOST_IP = os.getenv('HOST_IP')  # Optional, will fetch dynamically if not set
-ADMIN_IDS = {int(id_) for id_ in os.getenv('ADMIN_IDS', '1210291131301101618').split(',') if id_.strip()}
-ADMIN_ROLE_ID = int(os.getenv('ADMIN_ROLE_ID', '1376177459870961694'))
-WATERMARK = "HostForge VPS Service"
-WELCOME_MESSAGE = "Welcome To HostForge! Get Started With Us!"
+ADMIN_IDS = {int(id_) for id_ in os.getenv('ADMIN_IDS', '1306637704552906873').split(',') if id_.strip()}
+ADMIN_ROLE_ID = int(os.getenv('ADMIN_ROLE_ID', '1456641467886862467'))
+WATERMARK = "pixel Node VPS Service"
+WELCOME_MESSAGE = "Welcome To Pixel Node! Get Started With Us!"
 MAX_VPS_PER_USER = int(os.getenv('MAX_VPS_PER_USER', '3'))
 DEFAULT_OS_IMAGE = os.getenv('DEFAULT_OS_IMAGE', 'ubuntu:22.04')
 DOCKER_NETWORK = os.getenv('DOCKER_NETWORK', 'bridge')
 MAX_CONTAINERS = int(os.getenv('MAX_CONTAINERS', '100'))
-DB_FILE = 'hostforge.db'
-BACKUP_FILE = 'hostforge_backup.pkl'
+DB_FILE = 'PixelNOde.db'
+BACKUP_FILE = 'RishiNode_backup.pkl'
 PORT_RANGE_START = 20000
 PORT_RANGE_END = 30000
 
@@ -2707,3 +2707,4 @@ if __name__ == "__main__":
     except Exception as e:
         logger.error(f"Bot crashed: {e}")
         traceback.print_exc()
+
